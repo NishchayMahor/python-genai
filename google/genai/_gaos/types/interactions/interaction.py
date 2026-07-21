@@ -203,11 +203,8 @@ class InteractionTypedDict(TypedDict):
     Note: this is added by the SDK.
     """
     output_image: NotRequired[ImageContentParam]
-    r"""An image content block."""
     output_audio: NotRequired[AudioContentParam]
-    r"""An audio content block."""
     output_video: NotRequired[VideoContentParam]
-    r"""A video content block."""
 
 
 class Interaction(BaseModel):
@@ -299,13 +296,10 @@ class Interaction(BaseModel):
     """
 
     output_image: Optional[ImageContent] = None
-    r"""An image content block."""
 
     output_audio: Optional[AudioContent] = None
-    r"""An audio content block."""
 
     output_video: Optional[VideoContent] = None
-    r"""A video content block."""
 
     @model_serializer(mode="wrap")
     def _serialize_model(self, handler):

@@ -51,8 +51,6 @@ r"""The mime type of the video."""
 
 
 class VideoContentParam(TypedDict):
-    r"""A video content block."""
-
     data: NotRequired[Union[str, Base64FileInput]]
     r"""The video content."""
     mime_type: NotRequired[VideoContentMimeType]
@@ -64,8 +62,6 @@ class VideoContentParam(TypedDict):
 
 
 class VideoContent(BaseModel):
-    r"""A video content block."""
-
     data: Optional[Base64EncodedString] = None
     r"""The video content."""
 

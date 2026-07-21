@@ -53,8 +53,6 @@ r"""The mime type of the audio."""
 
 
 class AudioContentParam(TypedDict):
-    r"""An audio content block."""
-
     channels: NotRequired[int]
     r"""The number of audio channels."""
     data: NotRequired[Union[str, Base64FileInput]]
@@ -69,8 +67,6 @@ class AudioContentParam(TypedDict):
 
 
 class AudioContent(BaseModel):
-    r"""An audio content block."""
-
     channels: Optional[int] = None
     r"""The number of audio channels."""
 

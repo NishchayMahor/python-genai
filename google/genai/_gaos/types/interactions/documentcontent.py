@@ -43,8 +43,6 @@ r"""The mime type of the document."""
 
 
 class DocumentContentParam(TypedDict):
-    r"""A document content block."""
-
     data: NotRequired[Union[str, Base64FileInput]]
     r"""The document content."""
     mime_type: NotRequired[DocumentContentMimeType]
@@ -55,8 +53,6 @@ class DocumentContentParam(TypedDict):
 
 
 class DocumentContent(BaseModel):
-    r"""A document content block."""
-
     data: Optional[Base64EncodedString] = None
     r"""The document content."""
 

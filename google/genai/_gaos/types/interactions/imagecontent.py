@@ -50,8 +50,6 @@ r"""The mime type of the image."""
 
 
 class ImageContentParam(TypedDict):
-    r"""An image content block."""
-
     data: NotRequired[Union[str, Base64FileInput]]
     r"""The image content."""
     mime_type: NotRequired[ImageContentMimeType]
@@ -63,8 +61,6 @@ class ImageContentParam(TypedDict):
 
 
 class ImageContent(BaseModel):
-    r"""An image content block."""
-
     data: Optional[Base64EncodedString] = None
     r"""The image content."""
 

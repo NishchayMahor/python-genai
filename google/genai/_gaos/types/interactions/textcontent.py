@@ -28,8 +28,6 @@ from typing_extensions import Annotated, NotRequired, TypedDict
 
 
 class TextContentParam(TypedDict):
-    r"""A text content block."""
-
     text: str
     r"""Required. The text content."""
     annotations: NotRequired[List[AnnotationParam]]
@@ -38,8 +36,6 @@ class TextContentParam(TypedDict):
 
 
 class TextContent(BaseModel):
-    r"""A text content block."""
-
     text: str
     r"""Required. The text content."""
 
